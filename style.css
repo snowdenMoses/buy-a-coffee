@@ -122,7 +122,7 @@ body{
 .landingPageImage{
     width:100vw;
     /* background-color: brown; */
-    background-image: linear-gradient(rgba(10, 10, 10, 0.693),rgba(10, 10, 10, 0.693)),url('images/landingImage.jpg');
+    background-image: linear-gradient(rgba(10, 10, 10, 0.693),rgba(10, 10, 10, 0.693)),url('images/Capture.PNG');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
