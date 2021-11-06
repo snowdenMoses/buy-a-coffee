@@ -1,0 +1,479 @@
+
+
+@media only screen and (max-width:1400px) {
+    .headerText .mainText{
+        font-size: 38px;
+    } 
+
+    .row h2{
+        font-size: 40px;
+        text-align: center;
+        display: block;
+        
+        
+     }
+
+     .items ul li{
+        font-size: 16px;
+    }
+
+    blockquote::before{
+        content: open-quote;
+        font-size: 30px;
+        color: white;
+    }
+    
+    blockquote::after{
+        font-size: 30px;
+        padding-top: 0;
+        
+    }
+    
+    blockquote p{
+        font-size: 16px;
+        padding-bottom: 0px;
+    }
+
+}
+
+
+@media only screen and (max-width:940px) 
+{
+   
+    .headerText .mainText{
+        font-size: 30px;
+    } 
+
+   
+    .headerText a{
+        /* background-color: white; */
+        font-size: 18px;
+    } 
+
+    
+    .row{
+        margin-top: 30px;
+        
+     }
+    
+     .row h2{
+        font-size: 35px;
+         
+     }
+    
+    .work-step div{
+        font-size: 30px;
+        line-height: 40px;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+    } 
+    
+    
+    .work-step p{
+        
+        font-size: 18px;
+        line-height: 1.5em;
+        overflow: hidden;
+    } 
+
+    
+    .items ul li{
+        font-size: 14px;
+    } 
+
+
+    blockquote::before{
+        font-size: 30px;
+        color: white;
+    }
+    
+    blockquote::after{
+        font-size: 30px;
+        top:28vh;
+        
+    }
+    
+    blockquote p{
+        font-size: 16px;
+        word-spacing: 0;
+    }
+
+
+    .section6 .sliders .slider0{
+        height: 200px;
+        width: 25vw;
+        
+    }
+    
+    .section6 .sliders .slider{
+        height: 300px;
+        width: 35vw;
+        
+    }
+    
+    .section6 .sliders .slider2{
+        height: 200px;
+        width: 25vw;
+        
+        
+    }
+
+    .items{
+        padding: 0;
+    }
+
+
+    .section3 ul li figure img{
+        height: 250px;
+        
+     }
+
+
+}
+
+
+
+@media only screen and (max-width:830px){
+     
+    .items ul li{
+        font-size: 13px;
+    } 
+
+    .section3 ul li figure img{
+        height: 200px;
+        
+     }
+
+     
+    .navigation ul li{
+        font-size: 14px;
+    }
+
+    blockquote p{
+        font-size: 12px;
+    }
+
+    .signup{
+        padding: 5px;
+        
+        
+    }
+
+    .btn{
+        font-size: 12px;
+        
+    }
+}
+
+@media only screen and (max-width:720px){
+     
+    .items ul li{
+        font-size: 13px;
+    } 
+
+    .section3 ul li figure img{
+        height: 200px;
+        
+     }
+
+     .headerText .mainText{
+        font-size: 25px;
+    } 
+
+    h3{
+        font-size: 14px;
+    }
+
+    .download{
+        margin-top: 10px;
+    
+    } 
+}
+
+
+@media only screen and (max-width:640px){
+     
+
+
+    .section3 ul li figure img{
+        height: 150px;
+        
+     }
+
+     .headerText .mainText{
+        font-size: 20px;
+    } 
+
+    .headerText a{
+        /* background-color: white; */
+        font-size: 14px;
+    } 
+    
+     .row h2{
+        font-size: 25px;
+         
+     }
+    
+    .work-step div{
+        font-size: 18px;
+        line-height: 20px;
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+    } 
+    
+    
+    .work-step p{
+        
+        font-size: 16px;
+        line-height: 1.5em;
+        overflow: hidden;
+    } 
+
+    
+    .items ul li{
+        font-size: 14px;
+    } 
+
+    .big-pic{
+        float: left;
+        width: 70%;
+        height: 60vh;
+    }
+
+    .section8 .contact li{
+        font-size: 14px;
+    }
+
+    .section8 .social-media li img{
+        width:3vw;
+        height: 3vh;
+     }
+
+     
+
+
+
+   
+}
+
+
+
+
+@media only screen and (max-width:520px){
+
+    .navigation{
+        display: none;
+    }
+    
+
+    .section3 ul li figure img{
+        height: 150px;
+        
+     }
+
+     .headerText .mainText{
+        font-size: 20px;
+    } 
+
+    .headerText a{
+        /* background-color: white; */
+        font-size: 14px;
+    } 
+    
+     .row h2{
+        font-size: 25px;
+         
+     }
+    
+    .work-step div{
+        font-size: 18px;
+        line-height: 20px;
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+    } 
+    
+    
+    .work-step p{
+        
+        font-size: 16px;
+        line-height: 1.5em;
+        overflow: hidden;
+    } 
+
+    
+    .items ul li{
+        font-size: 14px;
+    } 
+
+    .big-pic{
+        float: left;
+        width: 70%;
+        height: 60vh;
+    }
+
+    .section8 .contact li{
+        font-size: 14px;
+    }
+
+    .section8 .social-media li img{
+        width:3vw;
+        height: 3vh;
+     }
+
+     .hidden{
+         display: inline-block;
+     }
+
+
+     .nav-image{
+         width: 4vw;
+         height: 4vh;
+         background-color:#ff6347;
+     }
+
+     .mobile-nav{
+        position: sticky;
+        top:10px;
+        float:right;
+        margin-top: 30px;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        z-index: 30;
+    
+    }
+
+    .sticky-nav{
+        position: sticky;
+        top:10px;
+        float:left;
+        z-index: 30;
+        margin-left: 0;
+        background-color: rgb(22, 22, 22);
+        border-radius: 10px;
+        padding-left: 0;
+        padding-bottom: 10px;
+        padding-right: 10px;
+    
+    }
+
+    .section6 .sliders .slider0{
+       display: none;
+        
+    }
+    
+    .section6 .sliders .slider{
+        height: 400px;
+        width: 90vw;
+        border-radius: 30px;
+        
+    }
+    
+    .section6 .sliders .slider2{
+        display: none;
+        
+    }
+
+   
+}
+
+
+@media only screen and (max-width:480px){
+
+    .navigation{
+        display: none;
+    }
+    
+
+    .section3 ul li figure img{
+        height: 150px;
+        
+     }
+
+     .headerText .mainText{
+        font-size: 20px;
+    } 
+
+    .headerText a{
+        /* background-color: white; */
+        font-size: 14px;
+    } 
+    
+     .row h2{
+        font-size: 25px;
+         
+     }
+    
+    .work-step div{
+        font-size: 18px;
+        line-height: 20px;
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+    } 
+    
+    
+    .work-step p{
+        
+        font-size: 16px;
+        line-height: 1.5em;
+        overflow: hidden;
+    } 
+
+    
+    .items ul li{
+        font-size: 14px;
+    } 
+
+    .big-pic{
+        float: left;
+        width: 70%;
+        height: 60vh;
+    }
+
+    .section8 .contact li{
+        font-size: 14px;
+    }
+
+    .section8 .social-media li img{
+        width:3vw;
+        height: 3vh;
+     }
+
+     .hidden{
+         display: contents;
+     }
+
+
+     .nav-image{
+         width: 4vw;
+         height: 4vh;
+         background-color:#ff6347;
+     }
+
+     .mobile-nav{
+        position: sticky;
+        top:10px;
+        float:right;
+        margin-top: 30px;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        z-index: 30;
+    
+    }
+
+    .sticky-nav{
+        position: sticky;
+        top:10px;
+        float:left;
+        z-index: 30;
+    
+    }
+
+
+   
+}
