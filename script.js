@@ -3,8 +3,9 @@
 const mobileNav = document.querySelector('.mobile-nav')
 const navImage = document.querySelector('.nav-image')
 const navigation = document.querySelector('.navigation')
+const navigation2 = document.querySelector('.navigation2')
 const stickyList = document.querySelector('.nav-list')
-const navList = document.getElementsByTagName('li')
+const navList = document.querySelectorAll('#list')
 const home = document.querySelector('.home')
 const howItWorks = document.querySelector('.how-it-works')
 const testimonials = document.querySelector('.testimonials')
@@ -24,25 +25,39 @@ mobileNav.addEventListener('click',()=>{
 
     let img = mobileNav.src;
     if (img.indexOf('menu-outline')!=-1) {
+       
 
         navImage.src  = `images/close-outline.svg`
-       // navigation.classList.toggle('hidden')
+        navigation.style.display="none"
+        navigation2.style.display="block"
+        //stickyList.classList.toggle('sticky-nav')
          for(var i = 0; i<navList.length; i++){
            
-            // alert(navList[i].innerHteTML)
+       
             navList[i].style.display = "block"
-            stickyList.classList.add('sticky-nav')
+           // stickyList.style.float = "left"
+            
+            
+
+           // stickyList.classList.add('sticky-nav')
 
             
 
         }
 
-        navigation.classList.toggle('hidden')
+                                            //Using forEach Loop
+                                            //navList.forEach(element => {
+                                            //element.style.display = "block"
+                                            //stickyList.classList.add('sticky-nav')
+                                            //});
+
+        //navigation.classList.toggle('hidden')
 
     }
      else {
         navImage.src  = `images/menu-outline.svg`
-        navigation.classList.toggle('hidden')
+        navigation2.style.display="none"
+        // navigation.style.display="block"
         // navList.id.add('block')
 
        
@@ -55,8 +70,33 @@ mobileNav.addEventListener('click',()=>{
 
 
    }
+//    navigation.style.display="inline-block"
 
 })
+
+
+// if(window.innerWidth>530){
+//     navigation.style.display="inline-block"
+//     navigation2.style.display="none"
+//     alert("greater")
+// }
+
+ 
+
+
+// document.addEventListener('DOMContentLoaded',init)
+
+// function init(){
+//     let query = window.matchMedia("(max-width:600px)");
+
+//     if(query.matches){
+//         navigation.style.backgroundColor="red"
+//     }
+
+//     else{
+//         navigation.style.backgroundColor="green"
+//     }
+// }
 
 
 howItWorks.addEventListener('click',()=>{

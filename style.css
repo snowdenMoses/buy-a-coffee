@@ -144,20 +144,6 @@ body{
 
 }
 
-.navigation2{
-    
-    
-    font-weight: bold;
-    position: sticky;
-    top: 0px;
-    background-color: rgb(36, 36, 36);
-    width: 100vw;
-    height: 9vh;
-    z-index: 20;
-    
-
-}
-
 .navigation ul{
     list-style: none;
     float: right;
@@ -185,6 +171,48 @@ body{
     border-bottom: 2px solid tomato;
     
 }
+
+.navigation2{
+    display: none;
+    position: sticky;
+    top: 0px;
+    /* background-color: rgb(36, 36, 36); */
+    width: 100vw;
+    /* height: 13vh; */
+    z-index: 20;
+    color: white;
+    
+
+}
+
+.nav2-list{
+    float: left;
+    margin-top: 30px;
+    background-color: rgb(36, 36, 36);
+    padding: 10px;
+    border-radius: 15px;
+    margin-left: 2vw;
+    
+}
+
+.nav2-list li{
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+
+.nav2-list li:active,
+.nav2-list li:hover
+{ 
+    border-bottom: 2px solid tomato;
+    
+}
+
 
 .section2{
     width: 80vw;
@@ -543,6 +571,16 @@ h1{
    height: 4vh;
    fill:tomato;
 }
+
+.sticky-nav{
+    /* display: block; */
+     /* background-color: rgb(22, 22, 22);  */
+     position: sticky;
+     /* top:10px; */
+     float:left;
+     margin-top: 0;
+ 
+ }
 
 .copyright{
     margin-top: 0;
