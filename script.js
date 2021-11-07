@@ -2,7 +2,7 @@
 
 const mobileNav = document.querySelector('.mobile-nav')
 const navImage = document.querySelector('.nav-image')
-const navigation = document.querySelector('.navigation')
+const navigation = document.querySelector('.navigation ul')
 const navigation2 = document.querySelector('.navigation2')
 const stickyList = document.querySelector('.nav-list')
 const navList = document.querySelectorAll('#list')
@@ -21,55 +21,63 @@ const right = document.querySelector('.right')
 
 
 mobileNav.addEventListener('click',()=>{
-    
-
+    stickyList.classList.toggle('show')
     let img = mobileNav.src;
     if (img.indexOf('menu-outline')!=-1) {
+        navImage.src  = `images/close-outline.svg`
+    }
+    else {
+                navImage.src  = `images/menu-outline.svg`
+    }
        
 
-        navImage.src  = `images/close-outline.svg`
-        navigation.style.display="none"
-        navigation2.style.display="block"
-        //stickyList.classList.toggle('sticky-nav')
-         for(var i = 0; i<navList.length; i++){
+//     let img = mobileNav.src;
+//     if (img.indexOf('menu-outline')!=-1) {
+       
+
+//         navImage.src  = `images/close-outline.svg`
+//         navigation.style.display="none"
+//         navigation2.style.display="block"
+//         //stickyList.classList.toggle('sticky-nav')
+//          for(var i = 0; i<navList.length; i++){
            
        
-            navList[i].style.display = "block"
-           // stickyList.style.float = "left"
+//             navList[i].style.display = "block"
+//            // stickyList.style.float = "left"
             
             
 
-           // stickyList.classList.add('sticky-nav')
+//            // stickyList.classList.add('sticky-nav')
 
             
 
-        }
+//         }
 
-                                            //Using forEach Loop
-                                            //navList.forEach(element => {
-                                            //element.style.display = "block"
-                                            //stickyList.classList.add('sticky-nav')
-                                            //});
+//                                             //Using forEach Loop
+//                                             //navList.forEach(element => {
+//                                             //element.style.display = "block"
+//                                             //stickyList.classList.add('sticky-nav')
+//                                             //});
 
-        //navigation.classList.toggle('hidden')
+//         //navigation.classList.toggle('hidden')
 
-    }
-     else {
-        navImage.src  = `images/menu-outline.svg`
-        navigation2.style.display="none"
-        // navigation.style.display="block"
-        // navList.id.add('block')
+//     }
+//      else {
+//         navImage.src  = `images/menu-outline.svg`
+//         navigation2.style.display="none"
+//         // navigation.style.display="block"
+//         // navList.id.add('block')
 
        
 
-        // for(const list of navList){
-        //     alert(list.innerHTML)
+//         // for(const list of navList){
+//         //     alert(list.innerHTML)
 
-        // }
-        //navList.style.display = "block"
+//         // }
+//         //navList.style.display = "block"
 
 
-   }
+//    }
 //    navigation.style.display="inline-block"
 
 })
