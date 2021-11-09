@@ -252,6 +252,29 @@
 
 @media only screen and (max-width:547px){
 
+    .section3{
+        margin: auto;
+        width: 100vw;
+     }
+
+    .headerText a:first-of-type:hover{
+        border:1px solid #ff6347;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        font-size: 12px;
+    } 
+    
+    .headerText a:last-of-type:hover{
+        background-color: tomato;
+        margin-left: 10px;
+        padding: 10px;
+        border-radius: 20px;
+        color:white;
+        cursor: pointer;
+        font-size: 12px;
+    } 
+
     .section6 {
         width:85vw;
         height: 35vh;
