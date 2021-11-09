@@ -254,7 +254,7 @@
 
     .section3{
         margin: auto;
-        width: 100vw;
+        width: 100%;
      }
 
     .headerText a:first-of-type:hover{
@@ -262,7 +262,7 @@
         background-color: white;
         color: black;
         cursor: pointer;
-        font-size: 12px;
+        font-size: 11px;
     } 
     
     .headerText a:last-of-type:hover{
