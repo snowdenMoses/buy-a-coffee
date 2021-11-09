@@ -17,7 +17,18 @@ const section7 = document.querySelector('.section7')
 const signupNav = document.querySelector('#signup')
 const left = document.querySelector('.left')
 const right = document.querySelector('.right')
+const preloader = document.querySelector(".gif")
+const sliders = document.querySelector('sliders')
+const slider = document.querySelector('slider')
+const sliderId = document.getElementById('sliderId')
 // const navList = document.getElementById('list')
+
+
+
+window.addEventListener("load",()=>{
+    preloader.classList.add("hidden")
+})
+
 
 
 mobileNav.addEventListener('click',()=>{
@@ -29,82 +40,9 @@ mobileNav.addEventListener('click',()=>{
     else {
                 navImage.src  = `images/menu-outline.svg`
     }
-       
 
-//     let img = mobileNav.src;
-//     if (img.indexOf('menu-outline')!=-1) {
-       
-
-//         navImage.src  = `images/close-outline.svg`
-//         navigation.style.display="none"
-//         navigation2.style.display="block"
-//         //stickyList.classList.toggle('sticky-nav')
-//          for(var i = 0; i<navList.length; i++){
-           
-       
-//             navList[i].style.display = "block"
-//            // stickyList.style.float = "left"
-            
-            
-
-//            // stickyList.classList.add('sticky-nav')
-
-            
-
-//         }
-
-//                                             //Using forEach Loop
-//                                             //navList.forEach(element => {
-//                                             //element.style.display = "block"
-//                                             //stickyList.classList.add('sticky-nav')
-//                                             //});
-
-//         //navigation.classList.toggle('hidden')
-
-//     }
-//      else {
-//         navImage.src  = `images/menu-outline.svg`
-//         navigation2.style.display="none"
-//         // navigation.style.display="block"
-//         // navList.id.add('block')
-
-       
-
-//         // for(const list of navList){
-//         //     alert(list.innerHTML)
-
-//         // }
-//         //navList.style.display = "block"
-
-
-//    }
-//    navigation.style.display="inline-block"
 
 })
-
-
-// if(window.innerWidth>530){
-//     navigation.style.display="inline-block"
-//     navigation2.style.display="none"
-//     alert("greater")
-// }
-
- 
-
-
-// document.addEventListener('DOMContentLoaded',init)
-
-// function init(){
-//     let query = window.matchMedia("(max-width:600px)");
-
-//     if(query.matches){
-//         navigation.style.backgroundColor="red"
-//     }
-
-//     else{
-//         navigation.style.backgroundColor="green"
-//     }
-// }
 
 
 howItWorks.addEventListener('click',()=>{
@@ -144,13 +82,33 @@ home.addEventListener('click',()=>{
     
 // })
 
+let x=0
+right.addEventListener("click",()=>{
+    if(x > "-300"){
+
+        x = x-100
+        // alert("Hello World")
+        sliders.style.right= x + "%"
+
+    }
+})
+
+left.addEventListener("click",()=>{
+    if(x < 0){
+
+        x = x+100
+        // alert("Hello World")
+        sliders.style.left= x + "%"
+
+    }
+})
+
 
 //Slider
 let images=[];
 let i = 0;
-const slider0 = document.querySelector('.slider0')
-const slider = document.querySelector('.slider')
-const slider2 = document.querySelector('.slider2')
+// const slider0 = document.querySelector('.slider0')
+// const slider2 = document.querySelector('.slider2')
 
 images[0] = 'images/Coffee3.jpg'
 images[1] = 'images/Coffee4.jpg'
@@ -164,9 +122,9 @@ const allSliders = document.querySelectorAll('.slider')
 
 const changeImageR = function(){
     // slider.style.transition = "0.9s"
-    slider0.src=images[i]
-    slider.src=images[i+1]
-    slider2.src=images[i+2]
+    slider.src=images[i]
+    // slider.src=images[i+1]
+    // slider2.src=images[i+2]
     if(i<images.length-1){
         i++;
     }
@@ -178,24 +136,5 @@ const changeImageR = function(){
 }
 
 
-
-
-
-// const changeImageL = function(){
-//     slider.src=images[i]
-//     if(i<0){
-//         i = images.length;
-//     }
-//     else{
-//         i=0
-//     }
-// }
-
-
-window.onload = changeImageR;
-
-// right.addEventListener('click',changeImageR)
-// left.addEventListener('click',changeImageL)
-
-
+// window.onload = changeImageR;
 

@@ -115,7 +115,7 @@ body{
 }
 
 .long-paste{
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.5em;
 }
 
@@ -132,16 +132,26 @@ body{
 
 
 
-.navigation ul{
-    font-weight: bold;
+.navigation{
     position: fixed;
     background-color: rgb(36, 36, 36);
+    height: 12v;
+    margin-top: 0;
+    
+    
+}
+
+
+
+.navigation ul{
+    font-weight: bold;
     list-style: none;
     float: right;
     margin-right: 35px;
     width: 100vw;
-    height: 9v;
+   
     z-index: 20;
+    top:0;
     
     
 }
@@ -214,7 +224,7 @@ body{
 }
 
 .section2 .long-paste{
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .section3 ul li figure{
@@ -354,6 +364,16 @@ cite{
     color: white;
 }
 
+
+/* .gif{
+    background: #000 url("images/gif5.gif") no-repeat center center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-size: 15%;
+} */
+
 .section5{
     margin-top:100px;
     background-image: linear-gradient(rgba(10, 10, 10, 0.85),rgba(10, 10, 10, 0.85)), url("images/coffee10.jpg");
@@ -368,22 +388,53 @@ cite{
 }
 
 .section6 {
-    width:95vw;
-    margin: auto;
+    width:70vw;
+    height: 55vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
     margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
     
 }
 
 .section6 .sliders{
-    overflow: hidden;
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    background-color: #fff;
+    border: 1px #000 solid;
     display: flex;
     justify-content: center;
-    /* display:block; */
+    left: 50%;
+    transform: translateX(-50%);
+    /* overflow: hidden; */
+    
+}
+/* 
+.section6 .sliders .slide-block{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 1px #000 solid;
+    display: flex;
+    justify-content: center;
+    
+} */
+
+.section6 .sliders .slider{
+  position: relative;
+  border-radius: 10px;
+  width:100%;
+  height: 100%;
     
 }
 
-.section6 .sliders .slider0{
+/* .section6 .sliders .slider0{
     height: 250px;
     width: 23vw;
     border-radius: 30px;
@@ -406,27 +457,28 @@ cite{
     align-self: center;
     margin-left: 5px;
     
-}
+} */
 
-/* .section6 .arrow{
-    display: flex;
-    flex: 50%;
-    flex-direction: column;
+.section6 .arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
     width: 4vw;
     height: 4vh;
     display:inline-block;
-    align-self: center;
-    margin: auto;
-} */
+   
+} 
 
 
- .section6 .arrows .left{
+  .section6 .arrows .left{
     position: absolute;
     width: 4vw;
     height: 4vh;
-    left:30%;
-    top:50%;
-    transform: translate(50%,50%);
+    left:8%;
+    
     
 }
 
@@ -435,17 +487,16 @@ cite{
     position: absolute;
     width: 4vw;
     height: 4vh;
-    right:30%;
-    top:50%;
-    transform: translate(50%,50%);
+    right:8%;
     
-}
+} 
 
 
 .section7{
     background-color:#f4f4f4;
     overflow: hidden;
     margin-top: 40px;
+    
     
 } 
 
@@ -476,10 +527,6 @@ cite{
     margin: 0 5px;
     
 } 
-
-.amount{
-    
-}
 
 .list-image{
     width: 2vw;
@@ -580,6 +627,7 @@ h1{
     top:10px;
     float:right;
     margin-top: 30px;
+    margin-right: 15px;
     cursor: pointer;
     z-index: 30;
     display: none;

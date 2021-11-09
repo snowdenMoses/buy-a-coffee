@@ -182,7 +182,7 @@
     } 
 
     h3{
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .download{
@@ -271,16 +271,17 @@
         float: right;
         margin-right: 35px;
         left: -120%;
-        width: 100%;
+        width: 5px;
+        height: 100vh;
         z-index: 20;
         font-weight: bold;
-        margin-top: 0;
-        overflow: hidden;
         
     }
     
     
     .navigation ul li{
+        position: relative;
+        top:10vh;
         display:block;
         font-size: 18px;
         text-transform: uppercase;
@@ -315,7 +316,8 @@
 
     .headerText a{
         /* background-color: white; */
-        font-size: 14px;
+        font-size: 12px;
+        margin-left: 3px;
     } 
     
      .row h2{
@@ -345,9 +347,12 @@
     } 
 
     .big-pic{
-        float: left;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
         width: 70%;
         height: 60vh;
+        border-radius: 10px;
     }
 
     .section8 .contact li{
@@ -355,8 +360,8 @@
     }
 
     .section8 .social-media li img{
-        width:3vw;
-        height: 3vh;
+        width:2w;
+        height: 2vh;
      }
 
      .hidden{
@@ -390,6 +395,11 @@
         
     }
 
+    .section7-container{
+        display: block;
+        justify-content: center; 
+    }
+
    
 }
 
@@ -405,12 +415,7 @@
 
      .headerText .mainText{
         font-size: 20px;
-    } 
-
-    .headerText a{
-        /* background-color: white; */
-        font-size: 12px;
-    } 
+    }  
     
      .row h2{
         font-size: 25px;
@@ -439,7 +444,6 @@
     } 
 
     .big-pic{
-        float: left;
         width: 70%;
         height: 50vh;
     }
@@ -447,16 +451,5 @@
     .section8 .contact li{
         font-size: 14px;
     }
-
-    .section8 .social-media li img{
-        width:3vw;
-        height: 3vh;
-     }
-
-
-
-    
-
-
    
 }
