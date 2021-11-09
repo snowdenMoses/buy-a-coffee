@@ -227,6 +227,12 @@ body{
     font-size: 14px;
 }
 
+.section3{
+    width: 95vw;
+    margin: auto;
+    margin-left: 0;
+ }
+
 .section3 ul li figure{
     overflow: hidden;
     margin: 0;
@@ -588,7 +594,7 @@ h1{
 .section8 .contact li{
     list-style: none;
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 5px;
     font-size: 18px;
 }
 
@@ -602,7 +608,7 @@ h1{
 .section8 .social-media li{
     list-style: none;
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .section8 .social-media li img{
