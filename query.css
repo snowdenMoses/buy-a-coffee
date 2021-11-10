@@ -285,13 +285,13 @@
         background-color: rgb(36, 36, 36);
         position: fixed;
         list-style: none;
-        float: right;
         margin-right: 35px;
         left: -120%;
-        width: 5px;
-        height: 100vh;
-        z-index: 20;
+        width: 1px;
+        height: 35vh;
+        z-index: 200;
         font-weight: bold;
+        margin-top: 0;
         
     }
     
@@ -335,7 +335,9 @@
     .headerText a{
         /* background-color: white; */
         font-size: 12px;
-        margin-left: 3px;
+        /* margin-left: 3px; */
+        display: inline-block;
+       padding-right: 0;
     } 
     
      .row h2{

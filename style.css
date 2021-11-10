@@ -409,10 +409,10 @@ cite{
 
 .section6 .sliders{
     position: absolute;
-    width: 70%;
+    width: 80%;
     height: 100%;
     background-color: #fff;
-    border: 1px #000 solid;
+    /* border: 1px #000 solid; */
     display: flex;
     justify-content: center;
     left: 50%;
@@ -582,28 +582,33 @@ h1{
     background-color: rgb(39, 39, 39);
     color: white;
     margin-top: 40px;
+    
 }
 
-.section8 .contact{
-    float: left;
-    margin-top: 0;
-    margin-top: 20px;
-    margin-bottom: 0;
-}
 
-.section8 .contact li{
-    list-style: none;
-    display: inline-block;
-    margin-right: 5px;
-    font-size: 18px;
-}
+
+/* .section8 .bottom {
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+} */
 
 .section8 .social-media{
-    float: right;
-    margin-top: 0;
-    margin-top: 20px;
+    /* float: right; */
+    margin-top: 10px;
     margin-bottom: 0;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0;
+    padding: 0;
+   
+
 }
+
+
 
 .section8 .social-media li{
     list-style: none;
