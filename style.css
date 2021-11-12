@@ -69,7 +69,7 @@ body{
     margin-bottom: 20px;
 } 
 
-.headerText a:first-of-type{
+.headerText a:first-of-type span{
     background-color: tomato;
     margin-left: 10px;
     padding: 10px;
@@ -78,7 +78,7 @@ body{
     /* transition: border-color 0.2s, background-color 0.2s; */
 } 
 
-.headerText a:last-of-type{
+.headerText a:last-of-type span{
     /* background-color: white; */
     color: white;
     margin-left: 10px;
@@ -88,14 +88,14 @@ body{
     transition: all 0.5s;
 } 
 
-.headerText a:first-of-type:hover{
+.headerText a:first-of-type span:hover{
     border:1px solid #ff6347;
     background-color: white;
     color: black;
     cursor: pointer;
 } 
 
-.headerText a:last-of-type:hover{
+.headerText a:last-of-type span:hover{
     background-color: tomato;
     margin-left: 10px;
     padding: 10px;

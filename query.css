@@ -182,7 +182,36 @@
 
 
 @media only screen and (max-width:640px){
+
+    .headerText a:first-of-type span:hover{
+        border:1px solid #ff6347;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        font-size: 14px;
+    } 
+    
+    .headerText a:last-of-type span:hover{
+        background-color: tomato;
+        margin-left: 10px;
+        padding: 10px;
+        border-radius: 20px;
+        color:white;
+        cursor: pointer;
+        font-size: 14px;
+    } 
+
      
+    .headerText a{
+        /* background-color: white; */
+        font-size: 14px;
+        /* margin-left: 3px; */
+       display: block;
+       padding-top: 15px;
+       padding-bottom: 15px;
+       padding-left: 0;
+       width: 100%;
+    } 
 
 
     .section3 ul li figure img{
@@ -257,24 +286,9 @@
         width: 100%;
      }
 
-    .headerText a:first-of-type:hover{
-        border:1px solid #ff6347;
-        background-color: white;
-        color: black;
-        cursor: pointer;
-        font-size: 11px;
-    } 
-    
-    .headerText a:last-of-type:hover{
-        background-color: tomato;
-        margin-left: 10px;
-        padding: 10px;
-        border-radius: 20px;
-        color:white;
-        cursor: pointer;
-        font-size: 12px;
-    } 
 
+
+    
     .section6 {
         width:85vw;
         height: 35vh;
@@ -332,13 +346,7 @@
         font-size: 20px;
     } 
 
-    .headerText a{
-        /* background-color: white; */
-        font-size: 12px;
-        /* margin-left: 3px; */
-        display: inline-block;
-       padding-right: 0;
-    } 
+   
     
      .row h2{
         font-size: 25px;
