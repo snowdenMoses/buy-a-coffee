@@ -303,7 +303,7 @@
         left: -120%;
         width: 1px;
         height: 35vh;
-        z-index: 200;
+        z-index: 1000;
         font-weight: bold;
         margin-top: 0;
         

@@ -136,5 +136,6 @@ const changeImageR = function(){
 }
 
 
+
 // window.onload = changeImageR;
 
