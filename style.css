@@ -201,6 +201,7 @@ body{
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    padding-left: 0;
     /* margin-left: -10px; */
    
  }
