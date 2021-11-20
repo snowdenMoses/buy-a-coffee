@@ -608,9 +608,9 @@ h1{
 
 
  .mobile-nav{
-    position: sticky;
+    position: absolute;
     top:10px;
-    float:right;
+    right:8px;
     margin-top: 30px;
     margin-right: 15px;
     cursor: pointer;

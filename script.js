@@ -36,9 +36,12 @@ mobileNav.addEventListener('click',()=>{
     let img = mobileNav.src;
     if (img.indexOf('menu-outline')!=-1) {
         navImage.src  = `images/close-outline.svg`
+        stickyList.classList.toggle('nav-list_visible')
+
     }
     else {
                 navImage.src  = `images/menu-outline.svg`
+                stickyList.classList.toggle('nav-list_visible')
     }
 
 

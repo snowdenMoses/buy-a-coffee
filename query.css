@@ -289,13 +289,23 @@
         height: 35vh;
     }
 
+    .navigation{
+        position: relative;
+    }
+
 
     .nav-list{
+        position: absolute;
+        right: -600px;
+        
+    }
+
+    .nav-list_visible{
         background-color: rgb(36, 36, 36);
-        position: fixed;
+        position: absolute;
         list-style: none;
-        margin-right: 35px;
-        left: -120%;
+        right: -1%;
+        top: 20px;
         width: 1px;
         height: 35vh;
         z-index: 1000;
