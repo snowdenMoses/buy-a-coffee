@@ -2,11 +2,15 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Responsive Website</title>
+        <title>Buy A Coffee</title>
+        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="gridstyle.css"/>
         <link rel="stylesheet" href="query.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+       
+        
     </head>
     
     <body>
@@ -25,19 +29,8 @@
                         <li id="signup" id="list">Sign Up</li>
                     </ul>
                 </nav>
-<!-- 
-                <div class="mo-nav" style="margin-top: 0;">
 
-                    <img src="images/menu-outline.svg" class="mobile-nav nav-image hidden"/>
-                    <nav class ="navigation2 main-nav">
-                        <ul class="nav2-list">
-                            <li class="home" id="list">Home</li>
-                            <li class="how-it-works" id="list">How it Works</li>
-                            <li class="testimonials" id="list">Our Testimonials</li>
-                            <li id="signup" id="list">Sign Up</li>
-                        </ul>
-                    </nav>
-                </div> -->
+                
     
                 <div class="landingPageImage">
                 </div>
@@ -51,7 +44,7 @@
             <section class="section2">
                 <div class="row benefits" >
                     <h2 class='heading'>Some Benefits of Taking Coffee</h2>
-                    <p class="long-paste">Increasing evidence has shown that coffee consumption is protective against the progression of liver disease to cirrhosis. This is associated with antioxidant and anti-fibrotic effects of coffee</p>
+                    <p class="long-paste1">Increasing evidence has shown that coffee consumption is protective against the progression of liver disease to cirrhosis. This is associated with antioxidant and anti-fibrotic effects of coffee</p>
                     <div class="col span-1-of-4">
                         <h3>
                             Cardiovascular disease
@@ -191,35 +184,20 @@
 
 
             <section class="section6"> 
-                <div class="row sliders">
+                <ul class="navKeys">
+                    <li class="left"><i class="fa fa-arrow-circle-left"></i></li>
+                    <li class="right"><i class="fa fa-arrow-circle-right"></i></i></li>
+
+                </ul>
+                <div class="my-slider">
                    
+                       <img src="images/Coffee1.jpg" class="slide_images"/>
+                       <img src="images/Coffee2.jpg" class="slide_images"/>
+                       <img src="images/Coffee3.jpg" class="slide_images"/>
+                       <img src="images/Coffee4.jpg" class="slide_images"/> 
+                       <img src="images/Coffee5.jpg" class="slide_images"/>
 
-                        <img src="images/Coffee3.jpg" class="slider" id="sliderId"/>
-                        <!-- <img src="images/Coffee4.jpg" class="slider" id="sliderId"/>
-                        <img src="images/Coffee5.jpg" class="slider" id="sliderId"/> -->
-
-                
-                    
                 </div>
-                <div class="row sliders">
-                   
-
-                    <img src="images/Coffee4.jpg" class="slider" id="sliderId"/>
-                  
-
-            
-                
-                </div>
-                <div class="row sliders">
-                    <img src="images/Coffee5.jpg" class="slider" id="sliderId"/>
-
-            
-                
-                </div>
-                <!-- <div class="arrows">
-                    <img src='images/back.svg'  class="arrow left"/>
-                    <img src='images/forward.svg'  class="arrow right"/>
-                </div> -->
                 
             </section>
 
@@ -326,12 +304,157 @@
                    <h3 class="copyright"> Copyright &copy; 2021</h3>
                 </div>
 
+
             </section>
+            <div style="position: relataive;">
+                <i class="fa fa-chevron-circle-up gotoTop"></i>
+            </div>
 
 
         </div>
 
+        
+
+
+       
+       
+
+        
+
+
+        <script>
+
+                            
+            const mobileNav = document.querySelector('.mobile-nav')
+            const navImage = document.querySelector('.nav-image')
+            const navigation = document.querySelector('.navigation')
+            const navigation2 = document.querySelector('.navigation2')
+            const stickyList = document.querySelector('.nav-list')
+            const navList = document.querySelectorAll('#list')
+            const home = document.querySelector('.home')
+            const howItWorks = document.querySelector('.how-it-works')
+            const testimonials = document.querySelector('.testimonials')
+            const section4 = document.querySelector('.section4')
+            const section5 = document.querySelector('.section5')
+            const landingPageImage = document.querySelector('.landingPageImage')
+            const section2 = document.querySelector('.section2')
+            const section7 = document.querySelector('.section7')
+            const signupNav = document.querySelector('#signup')
+            const left = document.querySelector('.left')
+            const right = document.querySelector('.right')
+            const preloader = document.querySelector(".gif")
+            const gotoTop = document.querySelector(".gotoTop")
+            // const navList = document.getElementById('list')
+
+
+
+            // // window.addEventListener("load",function(){
+            //     preloader.classList.add("hidden")
+            // })
+
+
+
+
+
+            mobileNav.addEventListener('click',()=>{
+                stickyList.classList.toggle('show')
+                let img = mobileNav.src;
+                if (img.indexOf('menu-outline')!=-1) {
+                    navImage.src  = `images/close-outline.svg`
+
+                    stickyList.classList.toggle('nav-list_visible')
+                    navigation.classList.toggle('navigation_newStyle')
+                    
+
+                }
+                else {
+                            navImage.src  = `images/menu-outline.svg`
+                            stickyList.classList.toggle('nav-list_visible')
+                            navigation.classList.toggle('navigation_newStyle')
+                }
+
+
+            })
+
+
+            howItWorks.addEventListener('click',()=>{
+                section4.scrollIntoView({behavior:"smooth"})
+
+            })
+
+
+
+            testimonials.addEventListener('click',()=>{
+                section5.scrollIntoView({behavior:"smooth"})
+
+            })
+
+
+            signupNav.addEventListener('click',()=>{
+                section7.scrollIntoView({behavior:"smooth"})
+
+            })
+
+            home.addEventListener('click',()=>{
+                landingPageImage.scrollIntoView({behavior:"smooth"})
+
+            })
+
+            window.onscroll = function(){
+                if(document.body.scrollTop>20 || document.documentElement.scrollTop>20){
+                gotoTop.style.display = "block"
+                
+            }
+            }
+            
+
+            gotoTop.addEventListener("click",()=>{
+                landingPageImage.scrollIntoView({behavior:"smooth"})
+            })
+
+            // gotoTop.scrollTop
+
+        </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
+<script>
+    var slider = tns({
+       container: '.my-slider',
+       items: 3,
+       slideBy: 1,
+       autoplay: true,
+       autoplayButtonOutput:false,
+       arrowKeys:true,
+       gutter:10,
+       mouseDrag:true,
+       controlsContainer:".navKeys",
+       nav:false,
+       responsive: {
+            0: {
+            edgePadding: 20,
+            gutter: 10,
+            items: 2
+            },
+            900: {
+            gutter: 30,
+            items: 3
+            },
+            1100: {
+            items: 4
+                }
+        }
+
+       });
+
+       
+    </script>
+
+
+
+       
     
-    <script src="script.js"></script>
+
+    
     </body>
 </html>

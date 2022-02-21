@@ -88,7 +88,7 @@
 
 
 
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: 690px) {
 	.span-3-of-3 {
 		width: 100%; 
 	}
@@ -98,10 +98,12 @@
 	.span-1-of-3 {
 		width: 100%;
 		margin-bottom: 15px;
+		margin: 10px;
+		
 	}
 }
 
-@media only screen and (max-width: 480px) {
+/* @media only screen and (max-width: 480px) {
 	.span-3-of-3 {
 		width: 100%; 
 	}
@@ -111,7 +113,7 @@
 	.span-1-of-3 {
 		width: 100%;
 	}
-}
+} */
 
 
 
@@ -137,7 +139,7 @@
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 690px) {
 	.span-4-of-4 {
 		width: 100%; 
 	}
@@ -151,3 +153,19 @@
 		width: 100%; 
 	}
 }
+
+
+/* @media only screen and (max-width: 480px) {
+	.span-4-of-4 {
+		width: 100%; 
+	}
+	.span-3-of-4 {
+		width: 100%; 
+	}
+	.span-2-of-4 {
+		width: 100%; 
+	}
+	.span-1-of-4 {
+		width: 100%; 
+	}
+} */
